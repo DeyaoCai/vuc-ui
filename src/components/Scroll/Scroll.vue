@@ -20,12 +20,13 @@
 <script>
 import {Drag, getRelativeComp} from "cUtils";
 import PicScroll from "./PicScroll";
-import ScrollSlide from "./PicScroll";
+import Range from "./Range";
+import ScrollSlide from "./ScrollSlide";
 import ScrollToFull from "./ScrollToFull";
 import ScrollSlideGroup from "./ScrollSlideGroup";
 
 
-const components = {PicScroll, ScrollSlide, ScrollToFull, ScrollSlideGroup};
+const components = {PicScroll, ScrollSlide, ScrollToFull, ScrollSlideGroup, Range};
 const relativeComp = getRelativeComp(components);
 export default {
   relativeComp,

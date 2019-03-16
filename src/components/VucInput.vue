@@ -14,14 +14,12 @@
   </div>
 </template>
 <script>
-import {getClass} from "cUtils";
 import Icon from './Icon.vue';
 export default {
   name: 'vuc-input',
   components: {Icon},
   props:["conf"],
   methods:{
-    getClass(type){return getClass(type);},
     handleIconClick (ev) {
       const conf = this.conf;
       if (conf.disable) return;

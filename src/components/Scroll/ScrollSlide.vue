@@ -25,7 +25,7 @@
 </template>
 <script>
 import {Drag, getRelativeComp} from "cUtils";
-import Icon from "./Icon.vue";
+import Icon from "../Icon.vue";
 const components = {Icon};
 const relativeComp = getRelativeComp(components);
 export default {
@@ -34,7 +34,6 @@ export default {
   components,
   data () {return {
     drag: new Drag(),
-    isDeleted: false,
     posi: {x: 0, y: 0},
     nowPosi:{x: 0, y: 0},
     damp: 0.3,
@@ -66,6 +65,7 @@ export default {
     },
   },
   mounted () {
+    console.log(this.config)
     this.inits && this.inits();
   },
   methods: {

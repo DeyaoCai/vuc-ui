@@ -12,6 +12,7 @@
     <PopUp @hidePop="slidePop.type=''" :config="slidePop"/>
     <div class="vuc-wrap-leftslide"><slot name="leftSlide"/></div>
     <div class="vuc-wrap-rightslide"><slot name="rightSlide"/></div>
+    <slot name="out-pop"/>
   </div>
 </template>
 <script>
@@ -24,7 +25,13 @@ import Foot from "./Foot";
 import Content from "./Content";
 import PopUp from "../PopUp";
 import Scroll from "../Scroll/Scroll";
-const components = {Head, Foot, Content, PopUp, Scroll};
+import Column from "../Column";
+import Btns from "../Btns";
+import Tab from "../Tab";
+import Icon from "../Icon";
+import VucInput from "../VucInput";
+import SSwitch from "../SSwitch";
+const components = {Head, Foot, Content, PopUp, Scroll, Column, Btns, Tab, SSwitch, VucInput, Icon};
 const relativeComp = getRelativeComp(components);
 export default {
   relativeComp,

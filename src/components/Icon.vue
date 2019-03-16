@@ -1,15 +1,13 @@
 <template>
-  <div class="vuc-icon" :class="getClass(type)">
+  <div class="vuc-icon" :class="type">
     <span :style="spanStyle" @click="config && config.click && config.click()"></span>
   </div>
 </template>
 <script>
-import {getClass} from "cUtils";
 export default {
   name: 'vuc-btn',
   props:["type", "config"],
   methods: {
-    getClass (type) {return getClass(type);},
   },
   computed: {
     spanStyle () {
