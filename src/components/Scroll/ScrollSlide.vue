@@ -24,7 +24,7 @@
   </div>
 </template>
 <script>
-import {Drag, getRelativeComp} from "cUtils";
+import {Drag, getRelativeComp} from "cdy-utils";
 import Icon from "../Icon.vue";
 const components = {Icon};
 const relativeComp = getRelativeComp(components);

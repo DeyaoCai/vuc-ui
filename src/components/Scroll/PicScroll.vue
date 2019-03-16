@@ -12,10 +12,10 @@
   </div>
 </template>
 <script>
-import cUtils from "cUtils";
+import cdyUtils from "cdy-utils";
 const {
   Drag,IEvent,DoubleDrag,SingleDragData,DoubleDragData
-} = cUtils;
+} = cdyUtils;
 export default {
   name: 'vue-scroll',
   props: ["config"],

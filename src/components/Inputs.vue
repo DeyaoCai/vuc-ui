@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import {getClass, type} from "cUtils";
+import {getClass, type} from "cdy-utils";
 export default {
   name: 'vuc-inputs',
   props:["config","type"],

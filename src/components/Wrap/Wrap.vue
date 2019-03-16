@@ -19,7 +19,7 @@
 /*
  wrap 应该是一个容器组件， 他定义了一系列的弹窗组件， 以及分割屏幕的各部分的容器， 然后返回一些开启弹窗的方法；
 */
-import {getRelativeComp} from "cUtils";
+import {getRelativeComp} from "cdy-utils";
 import Head from "./Head";
 import Foot from "./Foot";
 import Content from "./Content";

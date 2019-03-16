@@ -18,7 +18,7 @@
   </div>
 </template>
 <script>
-import {Drag, getRelativeComp} from "cUtils";
+import {Drag, getRelativeComp} from "cdy-utils";
 import PicScroll from "./PicScroll";
 import Range from "./Range";
 import ScrollSlide from "./ScrollSlide";

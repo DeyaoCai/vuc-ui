@@ -13,7 +13,7 @@
   </div>
 </template>
 <script>
-import {Drag} from "cUtils";
+import {Drag} from "cdy-utils";
 export default {
   name: 'vue-scroll',
   data () {return {
