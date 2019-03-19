@@ -21,10 +21,9 @@
 </template>
 
 <script>
-import Scroll from "../Scroll.vue";
+import Scroll from "../Scroll/Scroll.vue";
 import Btns from "../Btns.vue";
-import tools from "../../tools.js";
-const {Timer} = tools;
+import {Timer} from "cdy-utils";
 
 const timer=new Timer();
 export default {

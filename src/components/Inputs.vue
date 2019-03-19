@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import {getClass, type} from "cdy-utils";
+import {type} from "cdy-utils";
 export default {
   name: 'vuc-inputs',
   props:["config","type"],
@@ -32,7 +32,6 @@ export default {
     const conf=this.config;
   },
   methods: {
-    getClass (type) { return getClass(type); },
     toggleVal () { this.config.isActive = !this.config.isActive; },
     onFocus (ev) { this.readonly && ev.target.blur(); },
   },
@@ -44,11 +43,11 @@ export default {
       return "text"
     },
     classes () {
-      return getClass([{
+      return [{
         mustfill: this.config.isMustFill,
         regfail: this.shouldReg && !this.regSucc,
         withArrow: this.type === "text" && this.readonly,
-      },this.type])
+      },this.type];
     },
     regSucc(){
       const conf = this.config;

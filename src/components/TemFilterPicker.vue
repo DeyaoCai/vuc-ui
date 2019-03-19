@@ -84,6 +84,7 @@
 </template>
 
 <script>
+import {getRelativeComp} from "cdy-utils";
 import Scroll from "./Scroll/Scroll"
 import Wrap from "./Wrap/Wrap"
 import Btns from "./Btns.vue"

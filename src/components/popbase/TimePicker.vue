@@ -24,12 +24,11 @@
 </template>
 
 <script>
-import Scroll from "../Scroll.vue";
+import Scroll from "../Scroll/Scroll.vue";
 import Btns from "../Btns.vue";
-import tools from "../../tools.js";
-const {Timer, Time} = tools;
+import {Timer, Time} from "cdy-utils";
 export default {
-  components: tools.useComp({Scroll, Btns}),
+  components: {Scroll, Btns},
   name: 'vuc-timepicker',
   mounted () {
     this.inits();
